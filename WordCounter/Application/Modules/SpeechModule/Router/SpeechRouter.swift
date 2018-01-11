@@ -15,8 +15,8 @@ class SpeechRouter {
         self.navigation = UINavigationController()
     }
     
-    func showSpeechs(with presenter: SpeechsViewControllerPresenter) {
-        let viewController = SpeechsViewController(presenter: presenter)
+    func showSpeechs(with presenter: SpeechesViewControllerPresenter, dataSource: SpeechesDataSource) {
+        let viewController = SpeechesViewController(presenter: presenter, dataSource: dataSource)
         navigation.viewControllers = [viewController]
     }
     
