@@ -12,6 +12,7 @@
 		691324842007125F006F3F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691324822007125F006F3F25 /* Main.storyboard */; };
 		691324862007125F006F3F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 691324852007125F006F3F25 /* Assets.xcassets */; };
 		691324892007125F006F3F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691324872007125F006F3F25 /* LaunchScreen.storyboard */; };
+		69132491200712B1006F3F25 /* speeches.json in Resources */ = {isa = PBXBuildFile; fileRef = 69132490200712B1006F3F25 /* speeches.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		691324852007125F006F3F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		691324882007125F006F3F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6913248A2007125F006F3F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69132490200712B1006F3F25 /* speeches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speeches.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		6913247D2007125F006F3F25 /* WordCounter */ = {
 			isa = PBXGroup;
 			children = (
+				69132490200712B1006F3F25 /* speeches.json */,
 				6913247E2007125F006F3F25 /* AppDelegate.swift */,
 				691324802007125F006F3F25 /* ViewController.swift */,
 				691324822007125F006F3F25 /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				691324892007125F006F3F25 /* LaunchScreen.storyboard in Resources */,
+				69132491200712B1006F3F25 /* speeches.json in Resources */,
 				691324862007125F006F3F25 /* Assets.xcassets in Resources */,
 				691324842007125F006F3F25 /* Main.storyboard in Resources */,
 			);
