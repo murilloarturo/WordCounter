@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		6913247F2007125F006F3F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6913247E2007125F006F3F25 /* AppDelegate.swift */; };
 		691324812007125F006F3F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691324802007125F006F3F25 /* ViewController.swift */; };
-		691324842007125F006F3F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691324822007125F006F3F25 /* Main.storyboard */; };
 		691324862007125F006F3F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 691324852007125F006F3F25 /* Assets.xcassets */; };
 		691324892007125F006F3F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691324872007125F006F3F25 /* LaunchScreen.storyboard */; };
 		69132491200712B1006F3F25 /* speeches.json in Resources */ = {isa = PBXBuildFile; fileRef = 69132490200712B1006F3F25 /* speeches.json */; };
+		69C44D1F2007E42D00C746EA /* SpeechModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D1E2007E42D00C746EA /* SpeechModule.swift */; };
+		69C44D242007E64C00C746EA /* SpeechsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D222007E64C00C746EA /* SpeechsViewController.swift */; };
+		69C44D252007E64C00C746EA /* SpeechsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C44D232007E64C00C746EA /* SpeechsViewController.xib */; };
+		69C44D292007E75200C746EA /* SpeechRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D282007E75200C746EA /* SpeechRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6913247B2007125F006F3F25 /* WordCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6913247E2007125F006F3F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		691324802007125F006F3F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		691324832007125F006F3F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		691324852007125F006F3F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		691324882007125F006F3F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6913248A2007125F006F3F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69132490200712B1006F3F25 /* speeches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speeches.json; sourceTree = "<group>"; };
+		69C44D1E2007E42D00C746EA /* SpeechModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechModule.swift; sourceTree = "<group>"; };
+		69C44D222007E64C00C746EA /* SpeechsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechsViewController.swift; sourceTree = "<group>"; };
+		69C44D232007E64C00C746EA /* SpeechsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechsViewController.xib; sourceTree = "<group>"; };
+		69C44D282007E75200C746EA /* SpeechRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,122 @@
 		6913247D2007125F006F3F25 /* WordCounter */ = {
 			isa = PBXGroup;
 			children = (
-				69132490200712B1006F3F25 /* speeches.json */,
+				69C44D162007E35A00C746EA /* Application */,
+				69C44D172007E36500C746EA /* Resources */,
+				69C44D2B2007E8A400C746EA /* Supporting Files */,
 				6913247E2007125F006F3F25 /* AppDelegate.swift */,
+			);
+			path = WordCounter;
+			sourceTree = "<group>";
+		};
+		69C44D162007E35A00C746EA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				69C44D202007E43900C746EA /* API */,
+				69C44D212007E43F00C746EA /* Modules */,
 				691324802007125F006F3F25 /* ViewController.swift */,
-				691324822007125F006F3F25 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		69C44D172007E36500C746EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69132490200712B1006F3F25 /* speeches.json */,
 				691324852007125F006F3F25 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69C44D182007E3CB00C746EA /* SpeechModule */ = {
+			isa = PBXGroup;
+			children = (
+				69C44D1E2007E42D00C746EA /* SpeechModule.swift */,
+				69C44D192007E3D700C746EA /* Interactor */,
+				69C44D1D2007E41100C746EA /* Entity */,
+				69C44D1A2007E3E300C746EA /* Presenter */,
+				69C44D1B2007E3E700C746EA /* Router */,
+				69C44D1C2007E3F200C746EA /* View */,
+			);
+			path = SpeechModule;
+			sourceTree = "<group>";
+		};
+		69C44D192007E3D700C746EA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		69C44D1A2007E3E300C746EA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		69C44D1B2007E3E700C746EA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				69C44D282007E75200C746EA /* SpeechRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		69C44D1C2007E3F200C746EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69C44D262007E65000C746EA /* Speechs */,
+				69C44D272007E65A00C746EA /* Detail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69C44D1D2007E41100C746EA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		69C44D202007E43900C746EA /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		69C44D212007E43F00C746EA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				69C44D182007E3CB00C746EA /* SpeechModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		69C44D262007E65000C746EA /* Speechs */ = {
+			isa = PBXGroup;
+			children = (
+				69C44D222007E64C00C746EA /* SpeechsViewController.swift */,
+				69C44D232007E64C00C746EA /* SpeechsViewController.xib */,
+			);
+			path = Speechs;
+			sourceTree = "<group>";
+		};
+		69C44D272007E65A00C746EA /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		69C44D2B2007E8A400C746EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				691324872007125F006F3F25 /* LaunchScreen.storyboard */,
 				6913248A2007125F006F3F25 /* Info.plist */,
 			);
-			path = WordCounter;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,10 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C44D252007E64C00C746EA /* SpeechsViewController.xib in Resources */,
 				691324892007125F006F3F25 /* LaunchScreen.storyboard in Resources */,
 				69132491200712B1006F3F25 /* speeches.json in Resources */,
 				691324862007125F006F3F25 /* Assets.xcassets in Resources */,
-				691324842007125F006F3F25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,22 +253,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C44D292007E75200C746EA /* SpeechRouter.swift in Sources */,
+				69C44D242007E64C00C746EA /* SpeechsViewController.swift in Sources */,
 				691324812007125F006F3F25 /* ViewController.swift in Sources */,
 				6913247F2007125F006F3F25 /* AppDelegate.swift in Sources */,
+				69C44D1F2007E42D00C746EA /* SpeechModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		691324822007125F006F3F25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				691324832007125F006F3F25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		691324872007125F006F3F25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
