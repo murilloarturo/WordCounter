@@ -9,17 +9,19 @@
 import UIKit
 
 class SpeechRouter {
-    let navigation: UINavigationController
+    private let navigation: UINavigationController
     
-    init(navigation: UINavigationController) {
-        self.navigation = navigation
-        
-        setup()
+    init() {
+        self.navigation = UINavigationController()
     }
-}
-
-private extension SpeechRouter {
-    func setup() {
-        navigation.viewControllers = [SpeechsViewController()]
+    
+    func showSpeechs(with presenter: SpeechsViewControllerPresenter) {
+        let viewController = SpeechsViewController(presenter: presenter)
+        navigation.viewControllers = [viewController]
+    }
+    
+    func setupApplicationWindow(_ window: UIWindow?) {
+        window?.rootViewController = navigation
+        window?.makeKeyAndVisible()
     }
 }

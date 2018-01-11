@@ -18,6 +18,15 @@
 		69C44D252007E64C00C746EA /* SpeechsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C44D232007E64C00C746EA /* SpeechsViewController.xib */; };
 		69C44D292007E75200C746EA /* SpeechRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D282007E75200C746EA /* SpeechRouter.swift */; };
 		69C44D332007EA5600C746EA /* WordCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D322007EA5600C746EA /* WordCounterTests.swift */; };
+		69C44D3B2007EBDD00C746EA /* SpeechInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D3A2007EBDD00C746EA /* SpeechInteractor.swift */; };
+		69C44D3D2007EBE300C746EA /* Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D3C2007EBE300C746EA /* Speech.swift */; };
+		69C44D3F2007EBEF00C746EA /* SpeechPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D3E2007EBEF00C746EA /* SpeechPresenter.swift */; };
+		69C44D412007EC0900C746EA /* SpeechAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D402007EC0900C746EA /* SpeechAPI.swift */; };
+		69C44D452007ECC800C746EA /* SpeechTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D432007ECC800C746EA /* SpeechTableViewCell.swift */; };
+		69C44D462007ECC800C746EA /* SpeechTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C44D442007ECC800C746EA /* SpeechTableViewCell.xib */; };
+		69C44D492007EDC500C746EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69C44D4B2007EDC500C746EA /* Localizable.strings */; };
+		69C44D4E2007EDF300C746EA /* LanguageString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D4D2007EDF300C746EA /* LanguageString.swift */; };
+		69C44D502007F04B00C746EA /* SpeechsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C44D4F2007F04B00C746EA /* SpeechsDataSource.swift */; };
 		B350B82B7E60375FF6F731DC /* Pods_WordCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA85CEC53F43A92E4A14CA78 /* Pods_WordCounterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +57,15 @@
 		69C44D302007EA5600C746EA /* WordCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C44D322007EA5600C746EA /* WordCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCounterTests.swift; sourceTree = "<group>"; };
 		69C44D342007EA5600C746EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C44D3A2007EBDD00C746EA /* SpeechInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechInteractor.swift; sourceTree = "<group>"; };
+		69C44D3C2007EBE300C746EA /* Speech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speech.swift; sourceTree = "<group>"; };
+		69C44D3E2007EBEF00C746EA /* SpeechPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechPresenter.swift; sourceTree = "<group>"; };
+		69C44D402007EC0900C746EA /* SpeechAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechAPI.swift; sourceTree = "<group>"; };
+		69C44D432007ECC800C746EA /* SpeechTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTableViewCell.swift; sourceTree = "<group>"; };
+		69C44D442007ECC800C746EA /* SpeechTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechTableViewCell.xib; sourceTree = "<group>"; };
+		69C44D4A2007EDC500C746EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69C44D4D2007EDF300C746EA /* LanguageString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageString.swift; sourceTree = "<group>"; };
+		69C44D4F2007F04B00C746EA /* SpeechsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechsDataSource.swift; sourceTree = "<group>"; };
 		6EDCD248AE6D43DAE7CFB15C /* Pods-WordCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordCounter/Pods-WordCounter.release.xcconfig"; sourceTree = "<group>"; };
 		AE8289364A46062089A417D7 /* Pods-WordCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordCounter/Pods-WordCounter.debug.xcconfig"; sourceTree = "<group>"; };
 		BD6513A1A5CDFC3C33835ADD /* Pods-WordCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCounterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordCounterTests/Pods-WordCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +136,7 @@
 		69C44D172007E36500C746EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				69C44D4C2007EDDE00C746EA /* Localizable */,
 				69132490200712B1006F3F25 /* speeches.json */,
 				691324852007125F006F3F25 /* Assets.xcassets */,
 			);
@@ -140,6 +159,7 @@
 		69C44D192007E3D700C746EA /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				69C44D3A2007EBDD00C746EA /* SpeechInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -147,6 +167,7 @@
 		69C44D1A2007E3E300C746EA /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				69C44D3E2007EBEF00C746EA /* SpeechPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -171,6 +192,7 @@
 		69C44D1D2007E41100C746EA /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				69C44D3C2007EBE300C746EA /* Speech.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -178,6 +200,7 @@
 		69C44D202007E43900C746EA /* API */ = {
 			isa = PBXGroup;
 			children = (
+				69C44D402007EC0900C746EA /* SpeechAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -193,7 +216,9 @@
 		69C44D262007E65000C746EA /* Speechs */ = {
 			isa = PBXGroup;
 			children = (
+				69C44D422007ECB300C746EA /* Cell */,
 				69C44D222007E64C00C746EA /* SpeechsViewController.swift */,
+				69C44D4F2007F04B00C746EA /* SpeechsDataSource.swift */,
 				69C44D232007E64C00C746EA /* SpeechsViewController.xib */,
 			);
 			path = Speechs;
@@ -222,6 +247,24 @@
 				69C44D342007EA5600C746EA /* Info.plist */,
 			);
 			path = WordCounterTests;
+			sourceTree = "<group>";
+		};
+		69C44D422007ECB300C746EA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				69C44D432007ECC800C746EA /* SpeechTableViewCell.swift */,
+				69C44D442007ECC800C746EA /* SpeechTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		69C44D4C2007EDDE00C746EA /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				69C44D4D2007EDF300C746EA /* LanguageString.swift */,
+				69C44D4B2007EDC500C746EA /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		81C6943E2F52F260929B54F2 /* Pods */ = {
@@ -333,6 +376,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C44D462007ECC800C746EA /* SpeechTableViewCell.xib in Resources */,
+				69C44D492007EDC500C746EA /* Localizable.strings in Resources */,
 				69C44D252007E64C00C746EA /* SpeechsViewController.xib in Resources */,
 				691324892007125F006F3F25 /* LaunchScreen.storyboard in Resources */,
 				69132491200712B1006F3F25 /* speeches.json in Resources */,
@@ -465,11 +510,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C44D502007F04B00C746EA /* SpeechsDataSource.swift in Sources */,
+				69C44D3F2007EBEF00C746EA /* SpeechPresenter.swift in Sources */,
 				69C44D292007E75200C746EA /* SpeechRouter.swift in Sources */,
 				69C44D242007E64C00C746EA /* SpeechsViewController.swift in Sources */,
+				69C44D412007EC0900C746EA /* SpeechAPI.swift in Sources */,
 				691324812007125F006F3F25 /* ViewController.swift in Sources */,
+				69C44D3D2007EBE300C746EA /* Speech.swift in Sources */,
 				6913247F2007125F006F3F25 /* AppDelegate.swift in Sources */,
+				69C44D3B2007EBDD00C746EA /* SpeechInteractor.swift in Sources */,
 				69C44D1F2007E42D00C746EA /* SpeechModule.swift in Sources */,
+				69C44D4E2007EDF300C746EA /* LanguageString.swift in Sources */,
+				69C44D452007ECC800C746EA /* SpeechTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +550,14 @@
 				691324882007125F006F3F25 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		69C44D4B2007EDC500C746EA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69C44D4A2007EDC500C746EA /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -21,10 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func initMainApplicationView() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let navigation = UINavigationController()
-        let module = SpeechModule(navigation: navigation)
-        window?.rootViewController = navigation
-        window?.makeKeyAndVisible()
+        SpeechModule().initalizeApplication(with: window)
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

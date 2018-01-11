@@ -9,8 +9,16 @@
 import UIKit
 
 class SpeechModule {
+    private let presenter: SpeechPresenter
+    private let router: SpeechRouter
     
-    init(navigation: UINavigationController) {
-        let router = SpeechRouter(navigation: navigation)
+    init() {
+        let interactor = SpeechInteractor()
+        router = SpeechRouter()
+        presenter = SpeechPresenter(interactor: interactor, router: router)
+    }
+    
+    func initalizeApplication(with window: UIWindow?) {
+        router.setupApplicationWindow(window)
     }
 }
