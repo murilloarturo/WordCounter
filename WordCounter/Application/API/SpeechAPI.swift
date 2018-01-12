@@ -56,7 +56,7 @@ class SpeechAPI {
     }
 }
 
-private extension SpeechAPI {
+extension SpeechAPI {
     //You may wonder why I did this way
     //The file provided was rtf file instead of valid json
     func loadJSONFile() -> Observable<Data?> {

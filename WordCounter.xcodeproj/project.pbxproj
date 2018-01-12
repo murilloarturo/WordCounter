@@ -30,6 +30,7 @@
 		69C8DE2C2008284D00AE1707 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8DE2B2008284D00AE1707 /* UIKit+Extensions.swift */; };
 		69C8DE2F200831AB00AE1707 /* SpeechDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8DE2D200831AB00AE1707 /* SpeechDetailViewController.swift */; };
 		69C8DE30200831AB00AE1707 /* SpeechDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C8DE2E200831AB00AE1707 /* SpeechDetailViewController.xib */; };
+		69C8DE3220086DF100AE1707 /* SpeechAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8DE3120086DF100AE1707 /* SpeechAPITests.swift */; };
 		B350B82B7E60375FF6F731DC /* Pods_WordCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA85CEC53F43A92E4A14CA78 /* Pods_WordCounterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		69C8DE2B2008284D00AE1707 /* UIKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		69C8DE2D200831AB00AE1707 /* SpeechDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechDetailViewController.swift; sourceTree = "<group>"; };
 		69C8DE2E200831AB00AE1707 /* SpeechDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechDetailViewController.xib; sourceTree = "<group>"; };
+		69C8DE3120086DF100AE1707 /* SpeechAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechAPITests.swift; sourceTree = "<group>"; };
 		6EDCD248AE6D43DAE7CFB15C /* Pods-WordCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordCounter/Pods-WordCounter.release.xcconfig"; sourceTree = "<group>"; };
 		AE8289364A46062089A417D7 /* Pods-WordCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordCounter/Pods-WordCounter.debug.xcconfig"; sourceTree = "<group>"; };
 		BD6513A1A5CDFC3C33835ADD /* Pods-WordCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCounterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordCounterTests/Pods-WordCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				69C44D322007EA5600C746EA /* WordCounterTests.swift */,
+				69C8DE3120086DF100AE1707 /* SpeechAPITests.swift */,
 				69C44D342007EA5600C746EA /* Info.plist */,
 			);
 			path = WordCounterTests;
@@ -549,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C8DE3220086DF100AE1707 /* SpeechAPITests.swift in Sources */,
 				69C44D332007EA5600C746EA /* WordCounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
