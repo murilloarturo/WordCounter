@@ -52,7 +52,6 @@ private extension SpeechesViewController {
     
     func bind() {
         presenter.loadSpeeches()
-            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] (data) in
                 self?.dataSource.data = data
                 self?.tableView.reloadData()

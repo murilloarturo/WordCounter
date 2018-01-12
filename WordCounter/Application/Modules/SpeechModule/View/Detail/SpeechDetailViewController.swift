@@ -17,12 +17,12 @@ protocol SpeechDetailViewControllerPresenter: class {
 class SpeechDetailViewController: UIViewController {
 
     @IBOutlet private weak var textView: UITextView!
-    @IBOutlet private weak var loaderLabel: UILabel!
     @IBOutlet private weak var progressView: UIProgressView!
     @IBOutlet private weak var finalWordLabel: UILabel!
     @IBOutlet private weak var titleLabel: UILabel!
     private let presenter: SpeechDetailViewControllerPresenter
     private let speech: String
+    private let disposeBag = DisposeBag()
     
     init(speech: String, presenter: SpeechDetailViewControllerPresenter) {
         self.presenter = presenter
@@ -41,10 +41,39 @@ class SpeechDetailViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .never
         setupUI()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        textView.contentOffset = .zero
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        bind()
+    }
 }
 
 private extension SpeechDetailViewController {
     func setupUI() {
         textView.text = speech
+        titleLabel.text = LanguageString.speechFrequentWord.localizedString()        
+    }
+    
+    func bind() {
+        presenter.mostUsedWord(from: speech)
+            .subscribe(onNext: { [weak self] (word) in
+                self?.finalWordLabel.text = word
+                }, onError: { (erro) in
+                    
+            })
+            .disposed(by: disposeBag)
+        
+        presenter.progress()
+            .subscribe(onNext: { [weak self] (progress) in
+                self?.progressView.setProgress(progress, animated: true)
+            })
+            .disposed(by: disposeBag)
     }
 }

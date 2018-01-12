@@ -38,10 +38,10 @@ extension SpeechPresenter: SpeechesDataSourceDelegate {
 
 extension SpeechPresenter: SpeechDetailViewControllerPresenter {
     func progress() -> Observable<Float> {
-        return Observable.just(0.0)
+        return interactor.progress()
     }
     
     func mostUsedWord(from speech: String) -> Observable<String> {
-        return Observable.just("")
+        return interactor.mostFrequentWord(from: speech)
     }
 }
