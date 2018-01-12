@@ -10,6 +10,7 @@ import UIKit
 
 class SpeechTableViewCell: UITableViewCell {
     @IBOutlet private weak var oratorNameLabel: UILabel!
+    @IBOutlet private weak var dateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,5 +19,6 @@ class SpeechTableViewCell: UITableViewCell {
     
     func setup(with speech: Speech) {
         oratorNameLabel.text = speech.orator
+        dateLabel.text = LanguageString.speechDate.localizedString(params: [speech.dateString])
     }
 }

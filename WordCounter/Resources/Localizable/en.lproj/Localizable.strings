@@ -5,3 +5,13 @@
   Created by Arturo on 1/11/18.
   Copyright © 2018 Arturo. All rights reserved.
 */
+
+"errorParsingSpeechData" = "There was an error when trying to parse the data of the speech.";
+"errorJSONFileNotFound" = "The json file was not found.";
+"errorParsingJSONFile" = "There was an error when trying to load data from JSON file.";
+"errorFindingFrequentWord" = "Sorry, we were unable to find the most frequent word for this text.";
+
+"speechTitle" = "Speech List";
+"speechFrequentWord" = "The most frequent word used by the orator is:";
+"speechOratorName" = "Orator: %@";
+"speechDate" = "Date: %@";

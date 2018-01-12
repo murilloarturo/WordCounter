@@ -16,6 +16,10 @@ class Speech: Codable {
     let orator: String
     let date: Date
     let text: String
+    var dateString: String {
+        let dateFormatter = DateFormatter.speechDateStringFormatter()
+        return dateFormatter.string(from: date)
+    }
     
     enum CodingKeys: String, CodingKey {
         case orator = "name"
@@ -42,6 +46,13 @@ extension DateFormatter {
     static func speechDateFormatter() -> DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy"
+        
+        return formatter
+    }
+    
+    static func speechDateStringFormatter() -> DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM, dd yyyy"
         
         return formatter
     }
