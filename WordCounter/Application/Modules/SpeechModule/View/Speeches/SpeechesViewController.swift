@@ -41,7 +41,7 @@ class SpeechesViewController: UIViewController {
 
 private extension SpeechesViewController {
     func setupUI() {
-        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.prefersLargeTitles = false
         title = LanguageString.speechTitle.localizedString()
         
         tableView.registerNibForCell(with: SpeechTableViewCell.self)

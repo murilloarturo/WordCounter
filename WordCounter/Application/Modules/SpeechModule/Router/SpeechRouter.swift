@@ -20,6 +20,11 @@ class SpeechRouter {
         navigation.viewControllers = [viewController]
     }
     
+    func showSpeechDetail(_ speech: String, presenter: SpeechDetailViewControllerPresenter) {
+        let viewController = SpeechDetailViewController(speech: speech, presenter: presenter)
+        navigation.pushViewController(viewController, animated: true)
+    }
+    
     func setupApplicationWindow(_ window: UIWindow?) {
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()

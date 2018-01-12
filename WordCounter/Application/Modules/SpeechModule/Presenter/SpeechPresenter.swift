@@ -19,6 +19,7 @@ class SpeechPresenter {
         self.router = router
         self.dataSource = SpeechesDataSource()
         
+        dataSource.delegate = self
         router.showSpeechs(with: self, dataSource: dataSource)
     }
 }
@@ -26,5 +27,21 @@ class SpeechPresenter {
 extension SpeechPresenter: SpeechesViewControllerPresenter {
     func loadSpeeches() -> Observable<[Speech]> {
         return interactor.speeches()
+    }
+}
+
+extension SpeechPresenter: SpeechesDataSourceDelegate {
+    func didSelectSpeech(_ speech: Speech) {
+        router.showSpeechDetail(speech.text, presenter: self)
+    }
+}
+
+extension SpeechPresenter: SpeechDetailViewControllerPresenter {
+    func progress() -> Observable<Float> {
+        return Observable.just(0.0)
+    }
+    
+    func mostUsedWord(from speech: String) -> Observable<String> {
+        return Observable.just("")
     }
 }

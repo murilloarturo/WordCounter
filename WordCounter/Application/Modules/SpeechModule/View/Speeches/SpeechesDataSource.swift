@@ -8,7 +8,12 @@
 
 import UIKit
 
+protocol SpeechesDataSourceDelegate: class {
+    func didSelectSpeech(_ speech: Speech)
+}
+
 class SpeechesDataSource: NSObject {
+    weak var delegate: SpeechesDataSourceDelegate?
     var data: [Speech] = []
 }
 
@@ -39,5 +44,6 @@ extension SpeechesDataSource: UITableViewDataSource {
 extension SpeechesDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.didSelectSpeech(data[indexPath.row])
     }
 }
