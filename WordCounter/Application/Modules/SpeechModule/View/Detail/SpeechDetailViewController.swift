@@ -22,11 +22,13 @@ class SpeechDetailViewController: UIViewController {
     @IBOutlet private weak var titleLabel: UILabel!
     private let presenter: SpeechDetailViewControllerPresenter
     private let speech: String
+    private let orator: String
     private let disposeBag = DisposeBag()
     
-    init(speech: String, presenter: SpeechDetailViewControllerPresenter) {
+    init(speech: String, orator: String, presenter: SpeechDetailViewControllerPresenter) {
         self.presenter = presenter
         self.speech = speech
+        self.orator = orator
         
         super.init(nibName: String(describing: SpeechDetailViewController.self), bundle: nil)
     }
@@ -58,7 +60,8 @@ class SpeechDetailViewController: UIViewController {
 private extension SpeechDetailViewController {
     func setupUI() {
         textView.text = speech
-        titleLabel.text = LanguageString.speechFrequentWord.localizedString()        
+        titleLabel.text = LanguageString.speechFrequentWord.localizedString()
+        title = orator
     }
     
     func bind() {

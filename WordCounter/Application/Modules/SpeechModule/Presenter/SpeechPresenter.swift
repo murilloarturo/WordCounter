@@ -32,7 +32,7 @@ extension SpeechPresenter: SpeechesViewControllerPresenter {
 
 extension SpeechPresenter: SpeechesDataSourceDelegate {
     func didSelectSpeech(_ speech: Speech) {
-        router.showSpeechDetail(speech.text, presenter: self)
+        router.showSpeechDetail(speech.text, orator: speech.orator, presenter: self)
     }
 }
 
